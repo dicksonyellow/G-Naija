@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Eric Meyer's CSS Reset-->
+    <link rel="stylesheet" href="css-reset.css">
+    <!-- My CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us. G-Naija (Add contact details)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/68279f2e7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo for G-Naija"></a> 
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <div class="nav-item">
+                            <a href="#">Our Menu</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#">Reservation</a>
+                            <div class="dropdown">
+                                <div class="nav-item">
+                                    <a href="#">Sub1</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="#">Sub2</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="#">Sub2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#">Events</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="cta">
+                    <a href="#">Contact Us</a>
+                </div>
+            </header>
+        </div>
+        <div class="content-container">
+            <main class="contactpage">
+                <div class="hero1">
+                    <h1>CONTACT US</h1>
+                    <p>Feel free to tell us what you really what.</p>
+                    <div class="contacts">
+
+                        <div class="contacts-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>003 3994 388</p>
+                        </div>
+                        <div class="contacts-item">
+                            <i class="fas fa-envelope-open"></i>
+                            <p>info@g-naija.com</p>
+                        </div>
+                        <div class="contacts-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            20 LukeArea, 02-330 Warsaw, Poland
+                        </div>
+                    </div>
+                </div>
+                <div class="hero2">
+
+                    <form action="#" method="post">
+
+                            <div class="inputfield">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Type your name">
+                            </div>
+    
+                            <div class="inputfield">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Type your email">
+                            </div>
+    
+                            <div class="inputfield">
+                                <label for="district">Tell us your district</label>
+                                <select name="district" id="district">
+                                    <option value="None">Your District</option>
+                                    <option value="Bemowo">Bemowo</option>
+                                    <option value="Białołęka">Białołęka</option>
+                                    <option value="Bielany">Bielany</option>
+                                    <option value="Mokotów">Mokotów</option>
+                                    <option value="Ochota">Ochota</option>
+                                    <option value="Ursynów">Ursynów</option>
+                                    <option value="Wilanów">Wilanów</option>
+                                    <option value="Wola">Wola</option>
+                                </select>
+                            </div>
+                            
+                            <fieldset>
+                                <legend>Gender</legend>
+                                <input type="radio" name="gender" id="male" value="male"><label class="fieldlabel" for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female"><label class="fieldlabel" for="female">Female</label>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Be the first to be informed of our upcoming events</legend>
+                                <input type="checkbox" name="subscriber" id="subscriber" value="subscriber" checked><label class="fieldlabel" for="subscriber">Subscribe me to newsletter</label>
+                            </fieldset>
+    
+                            <textarea name="message" id="message" cols="50" rows="10" placeholder="Write a message"></textarea>
+    
+                            <div class="inputfield">
+                                <input type="submit" value="Send">
+                            </div>
+
+                    </form>
+                </div>
+            </main>
+        </div>
+        <div class="footer-container">
+            <footer>
+                <div class="top-footer">
+                    <div class="top-footer-items">
+                        <div class="footer-logo">
+                            <img src="images/footer-logo.png" alt="#">
+                        </div>
+                        <div class="footer-menu">
+                            <a href="#">Our Menu</a>
+                            <a href="#">Reservation</a>
+                            <a href="#">Events</a>
+                        </div>
+                        <div class="footer-contact">
+                            <p>Phone: 092-3994-4999</p>
+                            <p>Email: info@g-naija.com</p>
+                            <p>Address: 22 Main Str, 203-003, Warsaw, Poland</p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <p>&copy; G-Naija. All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
