@@ -368,7 +368,7 @@ input[type=text], input[type=email], select, textarea {
 }
 
 ::placeholder {
-    color: #357510;
+    color: #8e9988;
     padding-top: 10px;
 }
 
