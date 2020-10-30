@@ -6,6 +6,10 @@
 }
 
 body {
+    margin: 0;
+}
+
+.container {
     width: 100%;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     color: #252525;
@@ -51,16 +55,19 @@ i {
 
 /* Header */
 .header-container {
-    width: 100%;
     display: block;
     height: 100px;
     background-color: #ffffff;
-    box-shadow: 0 2.5px 5px 0 #cccccc;}
+    box-shadow: 0 2.5px 5px 0 #cccccc;
+    position: fixed;
+    width: 100%;
+
+}
 
 header {
-    width: 1024px;
-    height: 100%;
+    max-width: 1024px;
     margin: 0 auto;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,6 +132,10 @@ header {
     border-bottom: solid 3px #194201;
 }
 
+.handburger-menu {
+    display: none;
+}
+
 .cta {
     background-color: #357510;
     width: 20%;
@@ -153,12 +164,12 @@ header {
 /* Hero */
 /* Left */
 .content-container {
-    width: 100%;
     display: block;
+    padding-top: 100px;
 }
 
 main {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     min-height: 400px;
     display: flex;
@@ -191,25 +202,34 @@ main {
 /* Right */
 .hero2 {
     width: 40%;
-    text-align: right;
+    text-align: center;
     padding: 100px 0;
 }
+
+.mainhero {
+    display: block;
+    width: 400px;
+    height: 280px;
+}
+
+.mainhero img {
+    width: 100%;
+    height: auto;
+}
+
 .subhero {
     display: flex;
     justify-content: center;
 }
 
-
-
 /* Cards */
 .cards-container {
-    width: 100%;
     display: block;
     background-color: #ffffff;
 }
 
 .cards {
-    width: 1024px;
+    max-width: 1024px;
     min-height: 300px;
     padding: 100px 0;
     margin: 0 auto;
@@ -232,6 +252,7 @@ main {
 }
 
 .card1, .card2, .card3 {
+    background-color: #00000096;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -241,30 +262,26 @@ main {
 }
 
 .card1 {
-    background-image: url(images/Card1.jpg);
-    background-color: #00000096;
+    background-image: url(images/col1.png);
 }
 
 .card2 {
-    background-image: url(images/Card2.jpg);
-    background-color: #00000041;
+    background-image: url(images/col2.png);
 }
 
 .card3 {
-    background-image: url(images/Card3.jpg);
-    background-color: #00000096;
+    background-image: url(images/col3.png);
 }
 
 
 
 /* Testimonials */
 .testimonials {
-    width: 100%;
     display: block;
 }
 
 .testimonials-container {
-    width: 1024px;
+    max-width: 1024px;
     min-height: 300px;
     margin: 0 auto;
     display: flex;
@@ -338,7 +355,6 @@ main {
     align-items: flex-end;
 }
 
-
 .contactpage .hero2 {
     width: 60%;
     text-align: left;
@@ -348,8 +364,11 @@ main {
 
 form {
     width: 100%;
-    background-color: #ffffff;
-    padding: 50px;
+    background-image: url(images/contact-form-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 75px 50px;
     box-shadow: 0 0 25px #00000023;
     border-radius: 10px;
 }
@@ -412,7 +431,6 @@ input[type=submit]:hover {
 /* footer */
 .footer-container {
     display: block;
-    width: 100%;
     height: 250px;
     background-color: #194201;
 }
@@ -423,13 +441,12 @@ footer {
 }
 
 .top-footer {
-    width: 100%;
     height: 180px;
     background-color: #357510;
 }
 
 .top-footer-items {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -463,5 +480,131 @@ footer p {
 .bottom-footer p {
     text-align: center;
     padding-top: 20px;
+}
+
+@media(max-width: 768px) {
+ /* Header */
+    .logo {
+        width: 50%;
+        text-align: left;
+    }
+
+    .logo img {
+        margin-left: 20px;
+    }
+
+    .handburger-menu {
+        width: 50%;
+        display: block;
+        height: 100%;
+        text-align: right;
+    }
+
+    .toggle-button i {
+        font-size: 2.5rem;
+        margin-top: -10px;
+        color: #357510;
+        text-align: right;
+    }
+
+    .mobile-nav {
+        position: relative;
+    }
+
+    .nav-item {
+        display: block;
+    }
+
+    .nav-item a {
+        display: block;
+        position: relative;
+        font-size: 1rem;
+        padding: 20px 40px;
+        border: none;
+        background-color: #cccccc;
+        color: #000000;
+        border: #357510 solid 1px;
+    }
+
+   .nav-item a:hover {
+        background: #357510;
+        color: #ffffff;
+    }
+
+    .nav-item a:active {
+        border: none;
+    }
+
+    .dropdown {
+        background-color: #000000ab;
+        margin: -60px 0 0 -177.5px;
+    }
+
+    .dropdown a {
+        background-color: #00000000;
+    }
+
+    .dropdown .nav-item a {
+        font-size: 0.75rem;
+        margin-right: 0;
+        padding: 15px 50px;
+    }
+
+    .dropdown .nav-item a:hover {
+        background: #00000000;
+    }
+
+    .dropdown .nav-item:hover {
+        background: #252525f5;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .cta {
+        display: none;
+    }
+
+/* Main */
+
+/* Left */
+
+main {
+    display: block;   
+}
+
+.hero1 {
+    margin: 0 auto;
+    width: 80%;
+    padding: 100px 20px 0;
+    text-align: center;
+}
+
+.hero1 h2 {
+    font-size: 1rem;
+}
+
+.hero1 h1 {
+    font-size: 3rem;
+}
+
+.hero1 p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.hero2 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 20px 100px;
+}
+
+.mainhero {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 }
 

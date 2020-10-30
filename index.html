@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="African Restaurant, Nigerian Bar, Nigerian Music, Lounge">
+    <meta name="description" content="#">
     <!-- Eric Meyer's CSS Reset-->
     <link rel="stylesheet" href="css-reset.css">
     <!-- My CSS-->
@@ -14,11 +15,14 @@
 </head>
 <body>
     <div class="container">
+
         <div class="header-container">
             <header>
+
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="logo for G-Naija"></a> 
                 </div>
+
                 <div class="navigation">
                     <nav>
                         <div class="nav-item">
@@ -39,15 +43,49 @@
                             </div>
                         </div>
                         <div class="nav-item">
-                            <a href="#">Events</a>
+                            <a href="#">Gallery</a>
                         </div>
                     </nav>
                 </div>
+
+                <div class="handburger-menu">
+                    <div class="toggle-button">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <nav class="mobile-nav">
+                        <div class="nav-item">
+                            <a href="#">Our Menu</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#">Reservation</a>
+                            <div class="dropdown">
+                                <div class="nav-item">
+                                    <a href="#">Sub1</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="#">Sub2</a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="#">Sub2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#">Gallery</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </nav>
+                </div>
+
                 <div class="cta">
                     <a href="contact.html">Contact Us</a>
                 </div>
+
             </header>
         </div>
+
         <div class="content-container">
             <main>
                 <div class="hero1">
@@ -56,7 +94,9 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla mollitia quisquam molestiae dolore et adipisci sunt, repudiandae sequi eius, tempora ducimus quas dignissimos totam molestias nobis enim autem aperiam voluptas!</p>
                 </div>
                 <div class="hero2">
-                   <img src="images/Hero2.png" alt="Nigerian Jollof Rice and Fried Chicken">
+                   <div class="mainhero">
+                    <img src="images/Hero2.png" alt="Nigerian Jollof Rice and Fried Chicken">
+                   </div>
                    <div class="subhero">
                        <img src="images/Subhero1.png" alt="#">
                        <img src="images/Subhero2.png" alt="#">
@@ -68,16 +108,18 @@
             <div class="cards-container">
                 <div class="cards">
                     <div class="card1">
-                        <i class="fas fa-glass-cheers"></i>
-                        <h3>Party Hosting</h3>
+                        <i class="fas fa-music"></i>
+                        <h3>Afro Beat</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus natus possimus architecto!</p>
                     </div>
                     <div class="card2">
-                        <h3>Lorem, ipsum dolor</h3>
+                        <i class="fas fa-birthday-cake"></i>
+                        <h3>Party Hosting</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus natus possimus architecto!</p>
                     </div>
                     <div class="card3">
-                        <h3>Lorem, ipsum dolor</h3>
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>Nigerian Drinks</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus natus possimus architecto!</p>
                     </div>
                 </div>
@@ -132,5 +174,7 @@
             </footer>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
