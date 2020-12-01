@@ -1,0 +1,146 @@
+
+.hero1, .hero2 {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.contactpage .hero1 {
+    display: block;
+}
+
+.contacts {
+    width: 100%;
+    min-height: 250px;
+    background-color: #c1dfc464;
+    font-weight: 900;
+    display: inline-block;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.contacts i {
+    font-size: 2rem;
+    padding-top: 20px;
+    color: #357510;
+}
+
+.contacts p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contacts-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactpage .hero2 {
+    text-align: left;
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    background-image: url(../images/contact-form-background.png);
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    box-shadow: 0 0 25px #00000023;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=email], select, textarea {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    text-indent: 20px;
+    color: #357510;
+    background-color: #e6e6e6;
+    border: #357510 solid 1px;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+::placeholder {
+    color: #8e9988;
+    padding-top: 10px;
+}
+
+legend, label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #000000;
+    border: none;
+}
+
+.fieldlabel {
+    font-size: 1rem;
+    margin: 0 20px;
+    font-weight: 900;
+    color: #357510;
+}
+
+textarea {
+    height: 200px;
+}
+
+fieldset {
+    border: 0;
+
+}
+
+input[type=submit] {
+    background-color: #357510;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2.5px 5px #0000003a;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+    
+input[type=submit]:hover {
+    background-color: #194201;
+    transition-duration: 1s;
+}
+
+.maps {
+    text-align: center;
+    padding: 50px 40px;
+    background: #deecdd;
+}
+
+iframe {
+    width: 100%;
+}
+
+@media (min-width:792px) {
+
+    .hero1 {
+        width: 80%;
+    }
+
+    .contacts i, .contacts p {
+        padding: 20px 40px 0;
+        text-align: left;
+    }
+
+}
+
+@media (min-width:1024px) {
+    iframe {
+        width: 1024px;
+        padding: 0 40px;
+    }
+
+}

@@ -4,177 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="African Restaurant, Nigerian Bar, Nigerian Music, Lounge">
-    <meta name="description" content="#">
-    <!-- Eric Meyer's CSS Reset-->
-    <link rel="stylesheet" href="css-reset.css">
-    <!-- My CSS-->
-    <link rel="stylesheet" href="style.css">
-    <title>G-Naija - Number 1 African Restaurant, Lounge, and Night Club In Warsaw Poland</title>
+    <meta name="description" content="G-Naija is an all inclusive concept of showcasing African culture, dishes, togetherness and hospitality in a friendly & Yori-Yori environment.">
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/68279f2e7e.js" crossorigin="anonymous"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>G-Naija - Number 1 African Restaurant, Lounge, and Night Club In Warsaw Poland</title>
 </head>
 <body>
-    <div class="container">
+    <!-- Header -->
+    <div class="header-container">
 
-        <div class="header-container">
-            <header>
+        <header class="header">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="G-Naija-Logo"></a>
+    
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
 
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="logo for G-Naija"></a> 
+            <ul class="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="our-menu.html">Our Menu</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+
+        </header>
+    </div>
+
+    <!-- Content -->
+    <div class="content-container">
+        <main>
+            <div class="hero1">
+                <h2>Experience Naija Away From Naija</h2>
+                <h1>TASTY FRESH FOOD</h1>
+                <p>G-Naija is an all inclusive concept of showcasing African culture, dishes, togetherness and hospitality in a friendly & Yori-Yori environment.</p>
+            </div>
+            <div class="hero2">
+               <div class="mainhero">
+                <img src="images/Hero2.png" alt="Nigerian Jollof Rice and Fried Chicken">
+               </div>
+            </div>
+        </main>
+        <div class="services-container">
+            <div class="services">
+                <div class="s-title">
+                    <h2>Oya!!! Join the groove & catch feelings.</h2>
                 </div>
-
-                <div class="navigation">
-                    <nav>
-                        <div class="nav-item">
-                            <a href="#">Our Menu</a>
-                        </div>
-                        <div class="nav-item">
-                            <a href="#">Reservation</a>
-                            <div class="dropdown">
-                                <div class="nav-item">
-                                    <a href="#">Sub1</a>
-                                </div>
-                                <div class="nav-item">
-                                    <a href="#">Sub2</a>
-                                </div>
-                                <div class="nav-item">
-                                    <a href="#">Sub2</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item">
-                            <a href="#">Gallery</a>
-                        </div>
-                    </nav>
+                <div class="s-description">
+                    <p>The one wen you chop for your belle nah be your own oh!!! </p>
+                    <a href="contact-us.html"><p class="cta">Make an order now</p></a>
                 </div>
-
-                <div class="handburger-menu">
-                    <div class="toggle-button">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <nav class="mobile-nav">
-                        <div class="nav-item">
-                            <a href="#">Our Menu</a>
-                        </div>
-                        <div class="nav-item">
-                            <a href="#">Reservation</a>
-                            <div class="dropdown">
-                                <div class="nav-item">
-                                    <a href="#">Sub1</a>
-                                </div>
-                                <div class="nav-item">
-                                    <a href="#">Sub2</a>
-                                </div>
-                                <div class="nav-item">
-                                    <a href="#">Sub2</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-item">
-                            <a href="#">Gallery</a>
-                        </div>
-                        <div class="nav-item">
-                            <a href="contact.html">Contact Us</a>
-                        </div>
-                    </nav>
-                </div>
-
-                <div class="cta">
-                    <a href="contact.html">Contact Us</a>
-                </div>
-
-            </header>
-        </div>
-
-        <div class="content-container">
-            <main>
-                <div class="hero1">
-                    <h2>Experience Naija Away From Naija</h2>
-                    <h1>TASTY FRESH FOOD</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla mollitia quisquam molestiae dolore et adipisci sunt, repudiandae sequi eius, tempora ducimus quas dignissimos totam molestias nobis enim autem aperiam voluptas!</p>
-                </div>
-                <div class="hero2">
-                   <div class="mainhero">
-                    <img src="images/Hero2.png" alt="Nigerian Jollof Rice and Fried Chicken">
-                   </div>
-                   <div class="subhero">
-                       <img src="images/Subhero1.png" alt="#">
-                       <img src="images/Subhero2.png" alt="#">
-                       <img src="images/Subhero3.png" alt="#">
-                       <img src="images/Subhero4.png" alt="#">
-                   </div>
-                </div>
-            </main>
-            <div class="cards-container">
-                <div class="cards">
-                    <div class="card1">
-                        <i class="fas fa-music"></i>
-                        <h3>Afro Beat</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus natus possimus architecto!</p>
-                    </div>
-                    <div class="card2">
-                        <i class="fas fa-birthday-cake"></i>
-                        <h3>Party Hosting</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus natus possimus architecto!</p>
-                    </div>
-                    <div class="card3">
-                        <i class="fas fa-glass-cheers"></i>
-                        <h3>Nigerian Drinks</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minus natus possimus architecto!</p>
-                    </div>
+                <div class="s-social-icons">
+                    <p>Follow Us</p>
+                    <a href="https://www.instagram.com/g_naija_lounge/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https://www.facebook.com/GNaijaGallardo" target="_blank"><i class="fab fa-facebook-square"></i></a>
                 </div>
             </div>
         </div>
-        <div class="testimonials">
-            <h3>Testimonials</h3>
-            <div class="testimonials-container">
-                <div class="tbox">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis aliquam quasi sequi officiis quo fuga dolorum nobis fugit, architecto consequatur odio sunt</p>
-                    <p>Naiel Tom</p>
+        <div class="cards-container">
+            <div class="cards">
+                <div class="card1">
+                    <i class="fas fa-music"></i>
+                    <h3>Afro Beat</h3>
                 </div>
-                <div class="tbox">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione atque, veritatis excepturi quas iste velit!</p>
-                    <p>Luke Martin</p>
+                <div class="card2">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Party Hosting</h3>
                 </div>
-                <div class="tbox">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, blanditiis!</p>
-                    <p>Dickson E</p>
-                </div>
-                    <div class="tbox"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sed nisi quia facere consectetur magni iusto totam reprehenderit eveniet molestiae deserunt, dignissimos, eius alias dolores voluptas consequuntur officiis sequi odit?</p>
-                    <p>Martin</p>
+                <div class="card3">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Nigerian Drinks</h3>
                 </div>
             </div>
-        </div>
-        <div class="footer-container">
-            <footer>
-                <div class="top-footer">
-                    <div class="top-footer-items">
-                        <div class="footer-logo">
-                            <img src="images/footer-logo.png" alt="#">
-                        </div>
-                        <div class="footer-menu">
-                            <a href="#">Our Menu</a>
-                            <a href="#">Reservation</a>
-                            <a href="#">Events</a>
-                        </div>
-                        <div class="footer-contact">
-                            <p>Phone: 092-3994-4999</p>
-                            <p>Email: info@g-naija.com</p>
-                            <p>Address: 22 Main Str, 203-003, Warsaw, Poland</p>
-                        </div>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-instagram-square"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-footer">
-                    <p>&copy;2020 G-Naija. All Rights Reserved</p>
-                </div>
-            </footer>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <footer>
+            <div class="top-footer">
+                <div class="top-footer-items">
+                    <div class="footer-logo">
+                        <img src="images/footer-logo.png" alt="#">
+                    </div>
+                    <div class="footer-menu">
+                        <a href="about.html">About G-Naija</a>
+                        <a href="https://www.termsandcondiitionssample.com/live.php?token=ckK4cAAN4pKe9HNV7mF8lHPLnStOgaLD" target="_blank">Terms and Conditions</a>
+                    </div>
+                    <div class="footer-contact">
+                        <p>Phone: +48572183568</p>
+                        <p>Email: info@g-naija.com</p>
+                        <p>Address: Postępu 5, 02-676 Warszawa, Poland</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/g_naija_lounge/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://www.facebook.com/GNaijaGallardo" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>&copy;2020 G-Naija. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>

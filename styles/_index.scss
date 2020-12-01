@@ -1,0 +1,247 @@
+/* Left */
+.content-container {
+    display: block;
+    padding-top: 150px;
+    background-image: url(../images/fresh-shallots-fresh-chilies-food-background.jpg);
+    background-color: #ffffffd0;
+    background-blend-mode: overlay;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero1, .hero2 {
+    width: 100%;
+    text-align: center;
+}
+
+.hero1 h2 {
+    color: #357510;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.hero1 h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    text-shadow: 0 5px 5px #0000003a;
+}
+
+.hero1 p {
+    padding-top: 10px;
+}
+
+
+/* Right */
+
+.mainhero {
+    display: block;
+    width: 100%;
+    height: 280px;
+}
+
+.mainhero img {
+    width: 400px;
+    height: auto;
+}
+
+/* Service */ 
+.services-container {
+    display: block;
+    background-color: #deecdd;
+}
+
+.services{
+    max-width: 1024px;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+.services .s-title, .services .s-description, .services .s-social-icons {
+    padding: 25px;
+    text-align: center;
+}
+
+.services .s-description, .services .s-social-icons {
+    background-color: #46464619;
+}
+
+.services .s-title h2{
+    font-size: 1.5rem;
+    color: #357510;
+    font-weight: 900;
+}
+
+.services p {
+    padding: 5px 0;
+}
+
+.s-description .cta {
+    background: #357510;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px 1px #4d4d4d5b;
+    padding: 10px 0;
+}
+
+.s-description .cta:hover{
+    background: #194201;
+    transition: 1s ease-out;
+}
+
+.s-social-icons i {
+    font-size: 2rem;
+    padding: 10px 5px;
+    color: #357510;
+}
+
+/* Cards */
+.cards-container {
+    display: block;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+
+.cards {
+    max-width: 1024px;
+    min-height: 300px;
+    padding: 25px 20px 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.cards h3 {
+    font-size: 1.5rem;
+    padding: 30px 20px 5px 20px;
+    font-weight: 900;
+    color: #e2ebf0;
+}
+
+.cards p {
+    line-height: 1.5rem;
+    padding: 5px 20px;
+    color: #e2ebf0;
+}
+
+.cards i {
+    font-size: 4rem;
+    color: #e2ebf0;
+}
+
+.card1, .card2, .card3 {
+    background-color: #00000053;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4d4d4d;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.card1 {
+    background-image: url(../images/col1.png);
+}
+
+.card2 {
+    background-image: url(../images/col2.png);
+}
+
+.card3 {
+    background-image: url(../images/col3.jpg);
+}
+
+@media (min-width:792px) {
+    .content-container {
+        padding-top: 80px;
+    }
+
+    /* Hero */ 
+    main {
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px 0;
+    }
+    
+    .hero1 {
+        padding: 0 0 0 40px;
+    }
+
+    .hero1 h2 {
+        text-align: left;
+    }
+    
+    .hero1 h1 {
+        font-size: 3rem;
+        text-align: left;
+    }
+    
+    .hero1 p {
+        text-align: left;
+    }
+
+    .mainhero img {
+        width: 300px;
+    }
+
+    /* Services */
+    .services{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding-top: 75px;
+        margin: 0 auto;
+        grid-column-gap: 1rem;
+    } 
+
+    .s-social-icons {
+        align-self: start;
+    }
+
+        /* Cards */
+        .cards {
+        flex-direction: row;
+    }
+
+    .cards i {
+        font-size: 4rem;
+        color: #e2ebf0;
+    }
+
+    .card1, .card2, .card3 {
+        width: 33%;
+        padding: 50px 0;
+        margin: 0 5px;
+        box-sizing: border-box;
+    }
+
+
+}
+
+@media (min-width:1024px) {
+    .mainhero img {
+        width: 380px;
+    }
+    
+    .subhero {
+        margin-top: -50px;
+    }
+    
+}

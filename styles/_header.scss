@@ -1,0 +1,132 @@
+
+/* Header */
+.header-container {
+  background-color: #fff;
+  display: block;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+}
+
+.header ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: #357510;
+}
+
+.header ul a {
+  color: #fff;
+  display: block;
+  outline: rgba(255, 255, 255, 0.235) 0.5px solid;
+  padding: 10px 40px;
+  border-left: 0.5px solid #19420151;
+}
+
+.header ul a:hover{
+  background-color: #194201;
+}
+
+.header .menu{
+  clear: both;
+  max-height: 0;
+  transition:  max-height .2s ease-out;
+}
+
+.header .menu-icon {
+  padding: 40px 30px;
+  position: relative;
+  cursor: pointer;
+  float: right;
+}
+
+.header .menu-icon .nav-icon {
+  background: #357510;
+  display: block;
+  height: 4px;
+  width: 25px;
+  position: relative;
+  transition:background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+  background: #357510;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: 10px;
+}
+
+.header .menu-icon .nav-icon:after{
+  background: #357510;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  top: -10px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+ background-color: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+ transform: rotate(-45deg);
+ top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width:792px) {
+  .header li {
+      float: left;
+  }
+
+  .header li a {
+      padding: 27.5px 20px;
+      background-color: white;
+      color: #357510;
+      outline: none;
+  }
+
+  .header li a:hover {
+      color: #fff;
+  }
+
+  .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+  }
+
+  .header .menu-icon {
+      display: none;
+  }
+}

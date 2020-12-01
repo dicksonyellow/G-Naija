@@ -1,0 +1,116 @@
+.ourMH-container {
+    width: 100%;
+    margin: 0;
+    background: url(../images/menu-hero.jpg);
+    background-color: #ededede9;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+.ourMH-container main {
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+.ourMH1 {
+    margin: 150px 0 10px;
+    text-align: center;
+}
+
+.ourMH1 h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    text-shadow: 0 5px 5px #0000003a;
+}
+
+.ourMH2 {
+    padding: 20px;
+}
+
+.ourMH2 img {
+    width: 95%;
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.372);
+}
+
+.section1 {
+    margin: 0 auto;
+    text-align: center;
+    background: #deecdd;
+    display: block;
+}
+
+.section1 section {
+    max-width: 1024px;
+    min-height: 300px;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    padding: 40px;
+}
+
+.ctaIntro h2 {
+    font-size: 1.5rem;
+    color: #357510;
+    font-weight: 900;
+}
+
+.ctaIntro p {
+    background-color: #46464619;
+        padding: 20px;
+        margin: 20px 40px;
+}
+
+.ctaBtn {
+    width: 250px;
+    justify-self: center;
+    align-self: center;
+}
+
+a .cta {
+    background: #357510;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px 1px #4d4d4d5b;
+    padding: 10px 0;
+}
+
+a .cta:hover {
+    background: #194201;
+    transition: 1s ease-out;
+}
+
+@media (min-width:792px) {
+
+    .ourMH-container main {
+        display: block;
+    }
+    .ourMH1 {
+        margin: 150px 0 20px;
+    }
+
+    .ourMH2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 40px;
+    }
+
+    .ourMH2 img {
+        width: 45%;
+    } 
+
+    .section1 section {
+        width: 792px;
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .section1 section {
+        width: 1024px;
+    }
+}

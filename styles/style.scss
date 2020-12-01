@@ -1,0 +1,39 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: #252525;
+}
+
+body {
+    width: 100%;
+    background-color: #e1e1e1;
+}
+
+h1,h3 {
+    font-family: 'Oleo Script', cursive;
+    letter-spacing: 0.1rem;
+}
+
+h2,p,a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import "./header";
+
+@import "./index";
+
+@import "about";
+
+@import "./our-menu";
+
+@import "./contact";
+
+@import "./footer";
+
+
+
+
