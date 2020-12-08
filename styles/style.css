@@ -213,8 +213,8 @@ main {
   height: 280px;
 }
 
-.mainhero img {
-  width: 400px;
+.hero2 img {
+  width: 280px;
   height: auto;
 }
 
@@ -346,36 +346,20 @@ main {
   background-image: url(../images/col3.jpg);
 }
 
-@media (min-width: 792px) {
+@media (min-width: 650px) {
   .content-container {
     padding-top: 80px;
   }
   /* Hero */
   main {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 50px 0;
-  }
-  .hero1 {
-    padding: 0 0 0 40px;
-  }
-  .hero1 h2 {
-    text-align: left;
   }
   .hero1 h1 {
     font-size: 3rem;
-    text-align: left;
   }
-  .hero1 p {
-    text-align: left;
-  }
-  .mainhero img {
-    width: 300px;
+  .hero2 img {
+    width: 400px;
+    height: auto;
   }
   /* Services */
   .services {
@@ -412,12 +396,21 @@ main {
   }
 }
 
-@media (min-width: 1024px) {
-  .mainhero img {
-    width: 380px;
+@media (min-width: 980px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .subhero {
-    margin-top: -50px;
+  main .hero1 h1, main .hero1 h2, main .hero1 p {
+    text-align: left;
+  }
+  main .hero2 img {
+    width: 100%;
   }
 }
 
@@ -449,6 +442,10 @@ main {
   font-size: 2.5rem;
   padding-bottom: 10px;
   text-shadow: 0 5px 5px #0000003a;
+}
+
+.aboutLeft span {
+  color: #357510;
 }
 
 .aboutRight img {
@@ -500,7 +497,7 @@ main {
   display: grid;
 }
 
-@media (min-width: 792px) {
+@media (min-width: 900px) {
   .heroAbout {
     text-align: left;
     -webkit-box-orient: horizontal;
@@ -513,8 +510,8 @@ main {
     padding-top: 100px;
   }
   .aboutLeft {
-    width: 50%;
-    margin-right: 20px;
+    width: 70%;
+    margin-right: 30px;
   }
   .aboutRight img {
     width: 100%;
@@ -558,12 +555,13 @@ main {
 }
 
 .ourMH2 {
-  padding: 20px;
+  padding: 40px;
 }
 
 .ourMH2 img {
-  width: 95%;
-  margin: 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.372);
@@ -631,21 +629,6 @@ a .cta:hover {
   }
   .ourMH1 {
     margin: 150px 0 20px;
-  }
-  .ourMH2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 0 40px;
-  }
-  .ourMH2 img {
-    width: 45%;
   }
   .section1 section {
     width: 792px;
@@ -860,9 +843,12 @@ iframe {
   width: 100%;
 }
 
-@media (min-width: 792px) {
+@media (min-width: 990px) {
   .hero1 {
-    width: 80%;
+    width: 70%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 50px;
   }
   .contacts i, .contacts p {
     padding: 20px 40px 0;

@@ -24,12 +24,13 @@
 }
 
 .ourMH2 {
-    padding: 20px;
+    padding: 40px;
 }
 
 .ourMH2 img {
-    width: 95%;
-    margin: 20px;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
     box-sizing: border-box;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.372);
 }
@@ -90,17 +91,6 @@ a .cta:hover {
     .ourMH1 {
         margin: 150px 0 20px;
     }
-
-    .ourMH2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 40px;
-    }
-
-    .ourMH2 img {
-        width: 45%;
-    } 
 
     .section1 section {
         width: 792px;

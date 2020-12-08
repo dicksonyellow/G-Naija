@@ -49,9 +49,9 @@ main {
     height: 280px;
 }
 
-.mainhero img {
-    width: 400px;
-    height: auto;
+.hero2 img {
+    width: 280px;
+    height: auto;    
 }
 
 /* Service */ 
@@ -169,37 +169,23 @@ main {
     background-image: url(../images/col3.jpg);
 }
 
-@media (min-width:792px) {
+@media (min-width:650px) {
     .content-container {
         padding-top: 80px;
     }
 
     /* Hero */ 
     main {
-        flex-direction: row;
-        justify-content: center;
         padding: 50px 0;
     }
-    
-    .hero1 {
-        padding: 0 0 0 40px;
-    }
 
-    .hero1 h2 {
-        text-align: left;
-    }
-    
     .hero1 h1 {
         font-size: 3rem;
-        text-align: left;
     }
     
-    .hero1 p {
-        text-align: left;
-    }
-
-    .mainhero img {
-        width: 300px;
+    .hero2 img {
+        width: 400px;
+        height: auto;
     }
 
     /* Services */
@@ -231,17 +217,22 @@ main {
         margin: 0 5px;
         box-sizing: border-box;
     }
-
-
 }
 
-@media (min-width:1024px) {
-    .mainhero img {
-        width: 380px;
+@media (min-width:980px) {
+    main {
+        flex-direction: row;
+        align-items: center;
+
+        .hero1 {
+            h1, h2, p {
+                text-align: left;
+            }
+
+        }
+        .hero2 img {
+            width: 100%;
+        }
     }
-    
-    .subhero {
-        margin-top: -50px;
-    }
-    
+
 }

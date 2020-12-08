@@ -23,6 +23,10 @@
     text-shadow: 0 5px 5px #0000003a;
 }
 
+.aboutLeft span {
+    color: #357510;
+} 
+
 .aboutRight img {
     width: 100%;
     border: solid 10px #357510;
@@ -71,7 +75,7 @@
     display: grid;
 }
 
-@media (min-width: 792px) {
+@media (min-width: 900px) {
 
     .heroAbout {
         text-align: left;
@@ -81,8 +85,8 @@
     }
 
     .aboutLeft {
-        width: 50%;
-        margin-right: 20px;
+        width: 70%;
+        margin-right: 30px;
     }
     
     .aboutRight img {
